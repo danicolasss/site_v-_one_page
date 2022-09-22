@@ -1,0 +1,209 @@
+.BxContainer
+{
+    background: lightblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    min-height: 1000px;
+    margin: 143px;
+    background: #FFF;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    z-index: 0;
+}
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #FFF;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-weight:300;
+    font-size: 0.8em;
+    color: #FFF;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03A9F4;
+}
+.contactInfo ul li span{
+    color: #FFF;
+}
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+    color: #03A9F4;
+    font-weight: 500 ;
+}
+.contactInfo.education h4:nth-child(2){
+    color: #FFF;
+    font-weight: 500 ;
+}
+.contactInfo.education h4{
+    color: #FFF;
+    font-weight: 200 ;
+}
+.contactInfo.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03A9F4;
+}
+.container .right_side{
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0px;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.about .bx {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .bx  .time_company{
+    min-width: 150px;
+}
+.about .bx  .time_company h5{
+    text-transform: uppercase;
+    color: #848C90;
+}
+.about .bx .text h4 {
+    text-transform: uppercase;
+    color: #2A7DA2;
+    font-size: 16px;
+}
+.skills .bx{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .bx h4{
+    text-transform: uppercase;
+    color: #848C99;
+    font-weight: 500;
+}
+.skills .bx .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #F0F0F0;
+}
+.skills .bx .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03A9F4 ;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4 ,1Fr);
+}
+.interest ul li{
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa-solid{
+    color: #03A9F4;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width: 1150px) {
+    .container{
+        margin: 0px 0px;
+
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -1,0 +1,23 @@
+body{
+    background-image: url("../media/bg.72b7a4b8.svg");
+    background-repeat: repeat;
+    --interval-width: 350px;
+    background-size: var(--interval-width) auto;
+    background-position: calc(50% - var(--interval-width)/2) -1px;
+    height: 200vh;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.hero p{
+
+}

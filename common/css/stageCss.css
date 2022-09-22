@@ -1,0 +1,22 @@
+.divBx
+{
+    background: lightblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    min-height: 1000px;
+    margin: 143px;
+    background: #FFF;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    z-index: 0;
+}
+.container div{
+    max-width: 1350px;
+    min-height: 1000px;
+}
